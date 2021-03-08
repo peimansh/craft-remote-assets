@@ -2,7 +2,7 @@
     "name": "servd/craft-remote-assets",
     "description": "Move CP assets to an external filesystem such as S3",
     "type": "craft-plugin",
-    "version": "0.1.9",
+    "version": "0.1.8",
     "keywords": [
         "craft",
         "cms",
@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-          "peimansh\\craftremoteassets\\": "src/"
+          "servd\\craftremoteassets\\": "src/"
         }
     },
     "extra": {
@@ -37,6 +37,6 @@
         "hasCpSettings": false,
         "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/servdhost/craft-remote-assets/master/CHANGELOG.md",
-        "class": "peimansh\\craftremoteassets\\CraftRemoteAssets"
+        "class": "servd\\craftremoteassets\\CraftRemoteAssets"
     }
 }
