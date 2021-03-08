@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-          "servd\\craftremoteassets\\": "src/"
+          "peimansh\\craftremoteassets\\": "src/"
         }
     },
     "extra": {
@@ -37,6 +37,6 @@
         "hasCpSettings": false,
         "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/servdhost/craft-remote-assets/master/CHANGELOG.md",
-        "class": "servd\\craftremoteassets\\CraftRemoteAssets"
+        "class": "peimansh\\craftremoteassets\\CraftRemoteAssets"
     }
 }
