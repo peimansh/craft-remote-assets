@@ -51,8 +51,15 @@ class S3RemoteAssetStore
     public function getURLForKey($key)
     {
         $config = CraftRemoteAssets::getInstance()->getSettings()->s3Config;
-        return 'https://s3-' .
-            $config['region'] .
+
+        // If a CloudFront CDN URL has been provided, append only the 'root' and asset $key
+        if (!empty($config['cloudfrontUrl'])) {
+            return $config['cloudfrontUrl'] . '/' .
+                $config['root'] . '/' .
+                $key;
+        }
+
+        return 'https://s3' .
             '.amazonaws.com/' .
             $config['bucket'] . '/' .
             $config['root'] . '/' .
